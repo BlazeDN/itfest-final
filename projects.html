@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="ru" data-bs-theme="auto">
+
+<head>
+  <script src="static/js/color-modes.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Разделяйка - Миасс</title>
+  <link href="static/style/bs-style.css" rel="stylesheet">
+  <link rel="stylesheet" href="static/style/style.css">
+</head>
+
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+    <symbol id="check2" viewBox="0 0 16 16">
+      <path
+        d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+    </symbol>
+    <symbol id="circle-half" viewBox="0 0 16 16">
+      <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z" />
+    </symbol>
+    <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+      <path
+        d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z" />
+      <path
+        d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z" />
+    </symbol>
+    <symbol id="sun-fill" viewBox="0 0 16 16">
+      <path
+        d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
+    </symbol>
+  </svg>
+
+  <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle bg-primary rounded-3">
+    <button class="btn py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" aria-expanded="false"
+      data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
+      <svg class="my-1 theme-icon-active" width="1em" height="1em">
+        <use href="#circle-half"></use>
+      </svg>
+      <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+    </button>
+    <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+      <li>
+        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light"
+          aria-pressed="false">
+          <svg class="me-2 opacity-50" width="1em" height="1em">
+            <use href="#sun-fill"></use>
+          </svg>
+          Светлая
+          <svg class="ms-auto d-none" width="1em" height="1em">
+            <use href="#check2"></use>
+          </svg>
+        </button>
+      </li>
+      <li>
+        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark"
+          aria-pressed="false">
+          <svg class="me-2 opacity-50" width="1em" height="1em">
+            <use href="#moon-stars-fill"></use>
+          </svg>
+          Темная
+          <svg class="ms-auto d-none" width="1em" height="1em">
+            <use href="#check2"></use>
+          </svg>
+        </button>
+      </li>
+      <li>
+        <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto"
+          aria-pressed="true">
+          <svg class="me-2 opacity-50" width="1em" height="1em">
+            <use href="#circle-half"></use>
+          </svg>
+          Авто
+          <svg class="ms-auto d-none" width="1em" height="1em">
+            <use href="#check2"></use>
+          </svg>
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <header class="d-flex flex-wrap justify-content-center border-bottom">
+    <img src="static/img/split.svg" class="img-fluid">
+  </header>
+
+  <nav class="navbar navbar-expand-sm bg-primary" data-bs-theme="dark" aria-label="navbar">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#splitnavbar"
+        aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-md-center" id="splitnavbar">
+        <a class="navbar-brand" href="#">
+        </a>
+        <ul class="navbar-nav h5">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Главная</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="events.html">События</a>
+          </li>
+          <li class="nav-item dropdown" data-bs-theme="light">
+            <a class="nav-link active dropdown-toggle" href="#" data-bs-toggle="dropdown"
+              aria-expanded="false">Проекты</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="projects.html#ecocenter">Экоцентр</a></li>
+              <li><a class="dropdown-item" href="projects.html#ecopros">Экопросвещение</a></li>
+              <li><a class="dropdown-item" href="projects.html#saturdaynik">Субботники</a></li>
+              <li><a class="dropdown-item" href="projects.html#darmarka">ДАРмарка</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"></li>
+          <a class="nav-link" href="guides.html">Гайды</a>
+          </li>
+          <li class="nav-item"></li>
+          <a class="nav-link" href="contact.html">Контакты</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="b-divider"></div>
+
+  <main class="container py-5">
+    <h2 class="pb-2 border-bottom">Наши проекты</h2>
+
+    <div class="row row-cols-1 row-cols-lg-2 align-items-stretch g-3 py-5">
+      <div class="card shadow" id="ecocenter">
+        <img src="static/img/ecoc.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Экоцентр</h5>
+          <p class="card-text">Место, где несколько раз в неделю принимают вторсырье на переработку. Здесь в зоне
+            сортировки волонтер подскажет, как правильно разнести пластик, стекло и металл.</p>
+          <a href="#" class="btn btn-secondary">Подробнее</a>
+        </div>
+      </div>
+      <div class="card shadow" id="ecopros">
+        <img src="static/img/ecop.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Экопросвещение</h5>
+          <p class="card-text">Проводят экоуроки в школах и детских садах. Также провели субботники по уборке берега
+            озера Ильменское и шесть выездных экологических акций по сбору вторсырья для жителей Миасса.</p>
+          <a href="https://vk.com/razdelyaika_miass?z=album-187384518_281418100" class="btn btn-secondary">Подробнее</a>
+        </div>
+      </div>
+      <div class="card shadow col6" id="saturdaynik">
+        <img src="static/img/satur.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Субботники</h5>
+          <p class="card-text">Это Всероссийские уборки в формате командных соревнований по очистке природных территорий
+            от мусора и разделению отходов. Увлекательная игра с призами, где участники ищут артефакты, решают
+            экологические загадки, собирают и разделяют мусор, получая за это баллы. В рамках одной игры собирается от 2
+            до 5 тонн мусора.</p>
+          <a href="#" class="btn btn-secondary">Подробнее</a>
+        </div>
+      </div>
+      <div class="card shadow" id="darmarka">
+        <img src="static/img/darm.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">ДАРмарка</h5>
+          <p class="card-text">Проект, который поможет дать вещам вторую жизнь, а новый хозяин получит их бескорыстно.
+            Обменивая вещи, участники смогут помочь экологии, другим людям и, в первую очередь, самим себе: избавиться
+            от ненужных вещей и подарить им вторую жизнь.</p>
+          <a href="https://vk.com/topic-187384518_41051377" class="btn btn-secondary">Подробнее</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div class="b-divider"></div>
+
+  <footer class="pt-3 mt-3">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item"><a href="index.html" class="nav-link px-2 text-body-secondary">Главная</a></li>
+      <li class="nav-item"><a href="events.html" class="nav-link px-2 text-body-secondary">События</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Проекты</a></li>
+      <li class="nav-item"><a href="guides.html" class="nav-link px-2 text-body-secondary">Гайды</a></li>
+      <li class="nav-item"><a href="contact.html" class="nav-link px-2 text-body-secondary">Контакты</a></li>
+    </ul>
+    <p class="text-center text-body-secondary">&copy; 2024 CodeCouture, Inc</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
